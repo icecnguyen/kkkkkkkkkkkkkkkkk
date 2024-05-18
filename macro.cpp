@@ -56,7 +56,7 @@ int main() {
     // Press keys based on the timings read from the file
     for (size_t i = 0; i < timings.size(); ++i) {
         std::cout << "Pressing key " << i + 1 << " with delay " << timings[i] << " ms" << std::endl;
-        PressKey(VK_SPACE);
+        PressKey(A);
         std::this_thread::sleep_for(std::chrono::milliseconds(timings[i]));
     }
 
